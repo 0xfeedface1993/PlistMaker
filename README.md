@@ -27,9 +27,11 @@ If your image path is `https://www.apple.com/enterprise/img/qql.png`, IPA path s
 
 ### App Icon (应用图标)
 
-Drag png/jpeg file from Finder to plus image area.
+Drag jpeg or png file from Finder to plus image area.
 
-![satrt](http://oqedp1ccg.bkt.clouddn.com/drag-demo-gif.gif)
+![demo](http://oqedp1ccg.bkt.clouddn.com/dragdemogif.gif)
+
+> if gif not show up, you can direct visit http://oqedp1ccg.bkt.clouddn.com/dragdemogif.gif.
 
 ## Export
 
