@@ -58,6 +58,11 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="sVT-L0-IuK">
                                     <items>
+                                        <menuItem title="Show" keyEquivalent="n" id="H2a-ZQ-zXH">
+                                            <connections>
+                                                <action selector="reopen:" target="Voe-Tx-rLC" id="gHE-ze-0zi"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Minimize" keyEquivalent="m" id="gNQ-jE-0df">
                                             <connections>
                                                 <action selector="performMiniaturize:" target="Ady-hI-5gd" id="CAr-c4-YVE"/>

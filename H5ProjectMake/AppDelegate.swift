@@ -21,9 +21,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidBecomeActive(_ notification: Notification) {
         let window = NSApplication.shared.windows.first?.windowController
+        print("\(window?.window?.isVisible ?? false)")
         if let flag = window?.window?.isVisible, !flag {
             window?.showWindow(nil)
         }
+    }
+    
+    @IBAction func reopen(_ sender: Any) {
+        let window = NSApplication.shared.windows.first?.windowController
+        window?.showWindow(nil)
     }
 }
 
