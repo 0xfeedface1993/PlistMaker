@@ -58,7 +58,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="sVT-L0-IuK">
                                     <items>
-                                        <menuItem title="Show" keyEquivalent="n" id="H2a-ZQ-zXH">
+                                        <menuItem title="Window" keyEquivalent="n" id="H2a-ZQ-zXH">
                                             <connections>
                                                 <action selector="reopen:" target="Voe-Tx-rLC" id="gHE-ze-0zi"/>
                                             </connections>
