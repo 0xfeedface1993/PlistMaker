@@ -17,6 +17,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+        if let vc = NSApplication.shared.windows.first?.windowController?.contentViewController as? PlistViewController {
+            vc.saveEditData()
+        }
     }
     
     func applicationDidBecomeActive(_ notification: Notification) {

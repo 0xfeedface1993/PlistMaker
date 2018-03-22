@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://www.qq.com/ipa/qq.ipa</string>
+					<string>http://www.plistmaker.com/ipa/qq.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<false/>
 					<key>url</key>
-					<string>http://www.qq.com/ipa/qql.png</string>
+					<string>http://www.plistmaker.com/ipa/qql.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -27,19 +27,19 @@
 					<key>needs-shine</key>
 					<false/>
 					<key>url</key>
-					<string>http://www.qq.com/ipa/qqs.png</string>
+					<string>http://www.plistmaker.com/ipa/qqs.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.tensent.qq</string>
+				<string>com.plistmaker.qq</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>腾讯QQ</string>
+				<string>plistmaker</string>
 			</dict>
 		</dict>
 	</array>

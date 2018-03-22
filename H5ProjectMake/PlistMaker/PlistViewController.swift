@@ -44,6 +44,8 @@ struct Meta : Codable {
     }
 }
 
+let ImageCacheKey = "com.ascp.image.cache"
+
 class PlistViewController: NSViewController {
     @IBOutlet weak var bundleIdentifier: NSTextField!
     @IBOutlet weak var imageName: NSTextField!
@@ -66,13 +68,27 @@ class PlistViewController: NSViewController {
         }
     }()
     
+    static let cachePlistURL = try! FileManager.default.url(for: .cachesDirectory, in: .allDomainsMask, appropriateFor: nil, create: true).appendingPathComponent("catch.plist")
+    
+    let catchPlist : DistrubitePlist? = {
+        do {
+            let data = try Data(contentsOf: PlistViewController.cachePlistURL, options: .mappedIfSafe)
+            let decoder = PropertyListDecoder()
+            let result = try decoder.decode(DistrubitePlist.self, from: data)
+            return result
+        } catch {
+            print(error)
+            return nil
+        }
+    }()
+    
     private let defaultImage = #imageLiteral(resourceName: "Add")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        var plist = catchPlist ?? emptyPlist!
         
-        guard let plist = emptyPlist else { return }
         self.bundleIdentifier.stringValue = plist.items[0].metadata.identifier
         if let url = URL(string: plist.items[0].assets[1].url) {
             let name = String(url.lastPathComponent.split(separator: ".")[0])
@@ -88,6 +104,11 @@ class PlistViewController: NSViewController {
             imageDirPath.stringValue = url.deletingLastPathComponent().absoluteString
         }
         
+        if let data = UserDefaults.standard.data(forKey: ImageCacheKey), let image = NSKeyedUnarchiver.unarchiveObject(with: data) as? NSImage {
+            imageView.image = image
+        }   else    {
+            imageView.image = defaultImage
+        }
     }
     
     override func viewDidAppear() {
@@ -251,6 +272,41 @@ class PlistViewController: NSViewController {
         keyFrame.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         keyFrame.duration = 0.5
         v.layer?.add(keyFrame, forKey: keyFrame.keyPath!)
+    }
+    
+    /// 保存用户修改的数据
+    ///
+    /// - Parameter path: plist默认保存的位置
+    func saveEditData() {
+        var plist = self.emptyPlist!
+        
+        let sps = self.bundleIdentifier.stringValue.split(separator: ".")
+        if sps.count >= 3 {
+            let fileName = String(sps[1])
+            let pathx = URL(string: self.ipaDirPath.stringValue)?.appendingPathComponent("\(fileName).ipa")
+            plist.items[0].assets[0].url = pathx?.absoluteString ?? ""
+        }
+        
+        plist.items[0].metadata.identifier = self.bundleIdentifier.stringValue
+        plist.items[0].metadata.title = self.appName.stringValue
+        
+        let simagePath = URL(string: self.imageDirPath.stringValue)?.appendingPathComponent("\(self.imageName.stringValue)s.png")
+        let limagePath = URL(string: self.imageDirPath.stringValue)?.appendingPathComponent("\(self.imageName.stringValue)l.png")
+        plist.items[0].assets[1].url = limagePath?.absoluteString ?? ""
+        plist.items[0].assets[2].url = simagePath?.absoluteString ?? ""
+        
+        if let image = imageView.image, !defaultImage.isEqual(to: image) {
+            let archiveData = NSKeyedArchiver.archivedData(withRootObject: image)
+            UserDefaults.standard.set(archiveData, forKey: ImageCacheKey)
+        }
+        
+        let encoder = PropertyListEncoder()
+        do {
+            let data = try encoder.encode(plist)
+            try data.write(to: PlistViewController.cachePlistURL)
+        }   catch {
+            print(error)
+        }
     }
 }
 
