@@ -143,7 +143,7 @@ class PlistViewController: NSViewController {
             })
             return
         }
-        let fileName = String(sps[1])
+        let fileName = String(sps[2])
         
         let panel = NSOpenPanel()
         panel.nameFieldLabel = "unsaved.plist"
@@ -282,7 +282,7 @@ class PlistViewController: NSViewController {
         
         let sps = self.bundleIdentifier.stringValue.split(separator: ".")
         if sps.count >= 3 {
-            let fileName = String(sps[1])
+            let fileName = String(sps[2])
             let pathx = URL(string: self.ipaDirPath.stringValue)?.appendingPathComponent("\(fileName).ipa")
             plist.items[0].assets[0].url = pathx?.absoluteString ?? ""
         }
