@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="jGA-0Y-lOj">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="jGA-0Y-lOj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,6 +49,51 @@
                                         <menuItem title="Quit PlistMake" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Edit" id="9dG-c2-fNc">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Edit" id="U2I-KB-gIT">
+                                    <items>
+                                        <menuItem title="Undo" keyEquivalent="z" id="HQA-GF-WzN">
+                                            <connections>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="WQ9-lS-VAj"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Redo" keyEquivalent="Z" id="Ui7-eK-Xvp">
+                                            <connections>
+                                                <action selector="redo:" target="Ady-hI-5gd" id="a2E-K3-VUZ"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="wsT-DJ-1Lg"/>
+                                        <menuItem title="Cut" keyEquivalent="x" id="2Ev-MF-9Jl">
+                                            <connections>
+                                                <action selector="cut:" target="Ady-hI-5gd" id="4Ic-5c-znl"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy" keyEquivalent="c" id="u8r-eQ-5wX">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="EpM-Vm-Pwt"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" keyEquivalent="v" id="Wnc-Dk-wVs">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="5e0-o4-CgL"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste and Match Style" keyEquivalent="V" id="T5I-Uy-Jnc">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="pasteAsPlainText:" target="Ady-hI-5gd" id="dU2-If-IwF"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Delete" id="QRc-GT-qNf">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="delete:" target="Ady-hI-5gd" id="hal-t0-LUV"/>
                                             </connections>
                                         </menuItem>
                                     </items>
