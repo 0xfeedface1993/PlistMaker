@@ -44,6 +44,11 @@ struct Meta : Codable {
     }
 }
 
+struct ImageSize {
+    static let large : (CGFloat, CGFloat) = (512.0, 512.0)
+    static let small : (CGFloat, CGFloat) = (58.0, 58.0)
+}
+
 let ImageCacheKey = "com.ascp.image.cache"
 
 class PlistViewController: NSViewController {
@@ -175,16 +180,15 @@ class PlistViewController: NSViewController {
                 
                 let localLargeImagePath = pPath.appendingPathComponent("\(self.imageName.stringValue)l.png")
                 let localSmallImagePath = pPath.appendingPathComponent("\(self.imageName.stringValue)s.png")
+                let largeRect = NSRect(x: 0, y: 0, width: ImageSize.large.0, height: ImageSize.large.1)
+                let smallRect = NSRect(x: 0, y: 0, width: ImageSize.small.0, height: ImageSize.small.1)
                 
                 let encoder = PropertyListEncoder()
                 do {
                     let data = try encoder.encode(plist)
                     try data.write(to: pPath.appendingPathComponent("\(fileName).plist"))
-                    let images = self.ramden(image: self.imageView.image!)
-                    let lData = images.l.tiffRepresentation!
-                    let sData = images.s.tiffRepresentation!
-                    try lData.write(to: localLargeImagePath)
-                    try sData.write(to: localSmallImagePath)
+                    try writeImage(image: self.imageView.image!, usingType: .png, withSizeInPixels: largeRect.size, to: localLargeImagePath)
+                    try writeImage(image: self.imageView.image!, usingType: .png, withSizeInPixels: smallRect.size, to: localSmallImagePath)
                 }   catch {
                     print(error)
                 }
@@ -225,33 +229,6 @@ class PlistViewController: NSViewController {
         }
         return pack
     }
-    
-    struct ImageSize {
-        static let large : (CGFloat, CGFloat) = (512.0, 512.0)
-        static let small : (CGFloat, CGFloat) = (58.0, 58.0)
-    }
-    
-    
-    /// 生成大小图片
-    ///
-    /// - Parameter image: 图标
-    /// - Returns: l为大图，s为小图
-    func ramden(image: NSImage) -> (l: NSImage, s: NSImage) {
-        let largeRect = NSRect(x: 0, y: 0, width: ImageSize.large.0, height: ImageSize.large.1)
-        let smallRect = NSRect(x: 0, y: 0, width: ImageSize.small.0, height: ImageSize.small.1)
-        
-        let lImage = NSImage(size: largeRect.size)
-        lImage.lockFocus()
-        image.draw(in: largeRect, from: NSZeroRect, operation: .copy, fraction: 1.0, respectFlipped: true, hints: nil)
-        lImage.unlockFocus()
-        
-        let sImage = NSImage(size: smallRect.size)
-        sImage.lockFocus()
-        image.draw(in: smallRect, from: NSZeroRect, operation: .copy, fraction: 1.0, respectFlipped: true, hints: nil)
-        sImage.unlockFocus()
-        return (lImage, sImage)
-    }
-
     
     /// 抖动动画
     ///

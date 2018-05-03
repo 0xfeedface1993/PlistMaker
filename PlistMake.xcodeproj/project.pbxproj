@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243A8B5B209AE49F00424612 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A8B5A209AE49F00424612 /* ImageHelper.swift */; };
 		274717602011C2560023A767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2774BD6F1FE8EA1200DB21DB /* Main.storyboard */; };
 		2756FE9B1FE8FDC8001157B7 /* empty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2756FE9A1FE8FDC8001157B7 /* empty.plist */; };
 		2756FE9D1FEA0432001157B7 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756FE9C1FEA0432001157B7 /* DestinationView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		243A8B5A209AE49F00424612 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		270A4C7D1FECDDFB00DE7C3D /* H5ProjectMake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H5ProjectMake-Bridging-Header.h"; sourceTree = "<group>"; };
 		2756FE9A1FE8FDC8001157B7 /* empty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = empty.plist; sourceTree = "<group>"; };
 		2756FE9C1FEA0432001157B7 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				2756FE9A1FE8FDC8001157B7 /* empty.plist */,
 				2774BD961FE8EACD00DB21DB /* PlistViewController.swift */,
+				243A8B5A209AE49F00424612 /* ImageHelper.swift */,
 				2756FE9C1FEA0432001157B7 /* DestinationView.swift */,
 			);
 			path = PlistMaker;
@@ -206,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ascp;
 				TargetAttributes = {
 					2774BD631FE8EA1200DB21DB = {
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2774BD6A1FE8EA1200DB21DB /* ViewController.swift in Sources */,
+				243A8B5B209AE49F00424612 /* ImageHelper.swift in Sources */,
 				2774BD681FE8EA1200DB21DB /* AppDelegate.swift in Sources */,
 				2756FE9D1FEA0432001157B7 /* DestinationView.swift in Sources */,
 				2774BD971FE8EACD00DB21DB /* PlistViewController.swift in Sources */,
@@ -343,6 +347,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -350,6 +355,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -401,6 +407,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -408,6 +415,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
