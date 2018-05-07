@@ -151,7 +151,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="CustomWindowController" customModule="PlistMake" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController id="jGA-0Y-lOj" customClass="CustomWindowController" customModule="PlistMake" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Plist Maker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -439,6 +439,24 @@
                             <constraint firstItem="nju-AA-yEC" firstAttribute="leading" secondItem="3hO-47-j4g" secondAttribute="leading" id="yDN-nu-YfG"/>
                         </constraints>
                     </view>
+                    <touchBar key="touchBar" id="EeC-Wx-buk">
+                        <touchBarItems>
+                            <touchBarItem id="wjW-Yb-Jhp">
+                                <viewController key="viewController" id="I6Y-H1-pIJ">
+                                    <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xNx-vU-qva">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Label" drawsBackground="YES" id="rO7-fg-S2b">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </viewController>
+                                <size key="designTimeSize" width="46" height="24"/>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
                     <connections>
                         <outlet property="appName" destination="CTq-J2-0eF" id="sw8-2P-Sc1"/>
                         <outlet property="bundleIdentifier" destination="tj5-Xc-hiV" id="0zE-Vq-L7F"/>

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		243A8B5B209AE49F00424612 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A8B5A209AE49F00424612 /* ImageHelper.swift */; };
-		243A8B97209B06B000424612 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243A8B96209B06B000424612 /* Test.storyboard */; };
 		243A8B99209B0DDF00424612 /* CustomWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A8B98209B0DDF00424612 /* CustomWindowController.swift */; };
 		274717602011C2560023A767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2774BD6F1FE8EA1200DB21DB /* Main.storyboard */; };
 		2756FE9B1FE8FDC8001157B7 /* empty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2756FE9A1FE8FDC8001157B7 /* empty.plist */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		243A8B5A209AE49F00424612 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
-		243A8B96209B06B000424612 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		243A8B98209B0DDF00424612 /* CustomWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindowController.swift; sourceTree = "<group>"; };
 		270A4C7D1FECDDFB00DE7C3D /* H5ProjectMake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H5ProjectMake-Bridging-Header.h"; sourceTree = "<group>"; };
 		2756FE9A1FE8FDC8001157B7 /* empty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = empty.plist; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				2774BD691FE8EA1200DB21DB /* ViewController.swift */,
 				2774BD6D1FE8EA1200DB21DB /* Assets.xcassets */,
 				2774BD6F1FE8EA1200DB21DB /* Main.storyboard */,
-				243A8B96209B06B000424612 /* Test.storyboard */,
 				2774BD721FE8EA1200DB21DB /* Info.plist */,
 				2774BD731FE8EA1200DB21DB /* H5ProjectMake.entitlements */,
 				2774BD951FE8EA7E00DB21DB /* PlistMaker */,
@@ -262,7 +259,6 @@
 			files = (
 				2774BD6E1FE8EA1200DB21DB /* Assets.xcassets in Resources */,
 				2756FE9B1FE8FDC8001157B7 /* empty.plist in Resources */,
-				243A8B97209B06B000424612 /* Test.storyboard in Resources */,
 				274717602011C2560023A767 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
