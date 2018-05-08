@@ -161,108 +161,6 @@
                             <outlet property="delegate" destination="jGA-0Y-lOj" id="98r-iN-zZc"/>
                         </connections>
                     </window>
-                    <touchBar key="touchBar" id="ql4-Sj-snO">
-                        <touchBarItems>
-                            <touchBarItem id="9lT-9t-3TJ">
-                                <viewController key="viewController" id="p5y-vz-sNT">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AwD-Da-opj">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="生成" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1w7-dQ-QsN">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                        <color key="bezelColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
-                                        <connections>
-                                            <action selector="generation:" target="jGA-0Y-lOj" id="rah-io-jrk"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="72" height="30"/>
-                            </touchBarItem>
-                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFixedSpaceLarge" id="l7s-FS-rdY"/>
-                            <touchBarItem id="x0p-tk-taN">
-                                <viewController key="viewController" id="C97-Lh-mdV">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AMX-0B-rNX">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="包名" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hd6-5g-YYj">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="bundleIdentifier:" target="jGA-0Y-lOj" id="dos-0P-wEK"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="72" height="30"/>
-                            </touchBarItem>
-                            <touchBarItem id="tnZ-1I-O7g">
-                                <viewController key="viewController" id="hoE-sl-EDf">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="va2-kx-h8e">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="图片名" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dsU-gA-IRM">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="imageNmae:" target="jGA-0Y-lOj" id="IfA-nQ-3Ez"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="72" height="30"/>
-                            </touchBarItem>
-                            <touchBarItem id="bLo-Y6-84Y">
-                                <viewController key="viewController" id="HXL-DY-oIT">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w2A-dy-fKf">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="应用名" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WPT-JT-OCi">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="appNmae:" target="jGA-0Y-lOj" id="157-Y5-iAU"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="72" height="30"/>
-                            </touchBarItem>
-                            <touchBarItem id="vHV-8W-frY">
-                                <viewController key="viewController" id="iFe-gi-BTU">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RnF-fR-mtC">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="IPA文件夹" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U4E-HP-Thc">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="ipa:" target="jGA-0Y-lOj" id="pG8-8t-QS6"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="90" height="30"/>
-                            </touchBarItem>
-                            <touchBarItem id="S01-Hy-aiO">
-                                <viewController key="viewController" id="71a-ea-jhZ">
-                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ADX-oQ-6fT">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="图片文件夹" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qlH-SZ-zaK">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="imageDir:" target="jGA-0Y-lOj" id="sa4-Y4-wSk"/>
-                                        </connections>
-                                    </button>
-                                </viewController>
-                                <size key="designTimeSize" width="108" height="30"/>
-                            </touchBarItem>
-                        </touchBarItems>
-                    </touchBar>
                     <connections>
                         <segue destination="OyG-uK-9se" kind="relationship" relationship="window.shadowedContentViewController" id="Y4P-OL-0uy"/>
                     </connections>
@@ -439,21 +337,25 @@
                             <constraint firstItem="nju-AA-yEC" firstAttribute="leading" secondItem="3hO-47-j4g" secondAttribute="leading" id="yDN-nu-YfG"/>
                         </constraints>
                     </view>
-                    <touchBar key="touchBar" id="EeC-Wx-buk">
+                    <touchBar key="touchBar" id="rqK-Yl-Hob">
                         <touchBarItems>
-                            <touchBarItem id="wjW-Yb-Jhp">
-                                <viewController key="viewController" id="I6Y-H1-pIJ">
-                                    <textField key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xNx-vU-qva">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <textFieldCell key="cell" borderStyle="bezel" alignment="left" title="Label" drawsBackground="YES" id="rO7-fg-S2b">
+                            <touchBarItemOtherItemsProxy identifier="NSTouchBarItemIdentifierOtherItemsProxy" id="5S1-cr-8Hm"/>
+                            <touchBarItem id="DEz-eC-1uL">
+                                <viewController key="viewController" id="Tv0-vA-afZ">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bcu-HJ-CFk">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="生成" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jd4-WF-l4I">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" usesAppearanceFont="YES"/>
-                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
+                                        </buttonCell>
+                                        <color key="bezelColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <action selector="generation:" target="OyG-uK-9se" id="E4L-OR-S08"/>
+                                        </connections>
+                                    </button>
                                 </viewController>
-                                <size key="designTimeSize" width="46" height="24"/>
+                                <size key="designTimeSize" width="72" height="30"/>
                             </touchBarItem>
                         </touchBarItems>
                     </touchBar>
