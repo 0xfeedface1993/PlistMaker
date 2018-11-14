@@ -22,7 +22,7 @@ class DestinationView: NSImageView {
     }
     
     override func prepareForDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        if let data = sender.draggingPasteboard().data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let _ = NSImage(contentsOf: url) {
+        if let data = sender.draggingPasteboard.data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let _ = NSImage(contentsOf: url) {
             isImageFile = true
             return true
         }
@@ -31,7 +31,7 @@ class DestinationView: NSImageView {
     }
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
-        if let data = sender.draggingPasteboard().data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let _ = NSImage(contentsOf: url) {
+        if let data = sender.draggingPasteboard.data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let _ = NSImage(contentsOf: url) {
             isImageFile = true
             return .copy
         }
@@ -40,7 +40,7 @@ class DestinationView: NSImageView {
     }
     
     override func draggingEnded(_ sender: NSDraggingInfo) {
-        if let data = sender.draggingPasteboard().data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let img = NSImage(contentsOf: url) {
+        if let data = sender.draggingPasteboard.data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let img = NSImage(contentsOf: url) {
             image = img
             popImageAnimation()
         }
@@ -51,7 +51,7 @@ class DestinationView: NSImageView {
     }
 
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        if let data = sender.draggingPasteboard().data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let _ = NSImage(contentsOf: url) {
+        if let data = sender.draggingPasteboard.data(forType: NSPasteboard.PasteboardType.fileURL), let url = URL(dataRepresentation: data, relativeTo: nil), let _ = NSImage(contentsOf: url) {
             return true
         }
         return false
@@ -64,7 +64,7 @@ class DestinationView: NSImageView {
         xOffset.toValue = 50
         xOffset.duration = 0.35
         xOffset.beginTime = CACurrentMediaTime()
-        xOffset.fillMode = kCAFillModeForwards
+        xOffset.fillMode = CAMediaTimingFillMode.forwards
         xOffset.isRemovedOnCompletion = false
         layer?.add(xOffset, forKey: xOffset.keyPath!)
     }

@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import H5ProjectMake
 
 class H5ProjectMakeTests: XCTestCase {
     

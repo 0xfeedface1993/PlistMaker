@@ -246,7 +246,7 @@ class PlistViewController: NSViewController {
                            CGPoint(x: point.x + 10, y: point.y),
                            CGPoint(x: point.x - 10, y: point.y),
                            CGPoint(x: point.x + 10, y: point.y), point]
-        keyFrame.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        keyFrame.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         keyFrame.duration = 0.5
         v.layer?.add(keyFrame, forKey: keyFrame.keyPath!)
     }
