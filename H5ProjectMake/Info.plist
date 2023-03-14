@@ -33,5 +33,7 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.0</string>
 </dict>
 </plist>
