@@ -57,6 +57,7 @@
 		2774BD871FE8EA1200DB21DB /* H5ProjectMakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H5ProjectMakeUITests.swift; sourceTree = "<group>"; };
 		2774BD891FE8EA1200DB21DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2774BD961FE8EACD00DB21DB /* PlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistViewController.swift; sourceTree = "<group>"; };
+		5213C5C529C07DE300355846 /* privacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +108,7 @@
 		2774BD661FE8EA1200DB21DB /* H5ProjectMake */ = {
 			isa = PBXGroup;
 			children = (
+				5213C5C529C07DE300355846 /* privacy.md */,
 				2774BD671FE8EA1200DB21DB /* AppDelegate.swift */,
 				2774BD691FE8EA1200DB21DB /* ViewController.swift */,
 				2774BD6D1FE8EA1200DB21DB /* Assets.xcassets */,
@@ -464,7 +466,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = E6NP67H473;
 				INFOPLIST_FILE = H5ProjectMake/Info.plist;
@@ -490,7 +492,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = E6NP67H473;
 				INFOPLIST_FILE = H5ProjectMake/Info.plist;
