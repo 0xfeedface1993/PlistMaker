@@ -92,7 +92,7 @@ class PlistViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        var plist = catchPlist ?? emptyPlist!
+        let plist = catchPlist ?? emptyPlist!
         
         self.bundleIdentifier.stringValue = plist.items[0].metadata.identifier
         if let url = URL(string: plist.items[0].assets[1].url) {

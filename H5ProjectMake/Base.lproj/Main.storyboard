@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="jGA-0Y-lOj">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="jGA-0Y-lOj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="14019"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="21008"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
@@ -152,7 +152,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="jGA-0Y-lOj" customClass="CustomWindowController" customModule="PlistMake" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Plist Maker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
+                    <window key="window" title="Plist Maker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -178,15 +178,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="leM-QP-afg">
-                                <rect key="frame" x="176" y="594" width="99" height="18"/>
+                                <rect key="frame" x="181" y="592" width="88" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Plist Maker" id="SIN-pU-ihA">
-                                    <font key="font" size="17" name=".PingFangSC-Medium"/>
+                                    <font key="font" metaFont="system" size="17"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uBz-Ja-MrP">
-                                <rect key="frame" x="18" y="536" width="170" height="17"/>
+                                <rect key="frame" x="18" y="535" width="167" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="包名（Bundle Identifier）：" id="D5W-E7-Ncy">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -194,15 +194,15 @@
                                 </textFieldCell>
                             </textField>
                             <textField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-Xc-hiV">
-                                <rect key="frame" x="194" y="533" width="236" height="22"/>
+                                <rect key="frame" x="191" y="532" width="239" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="com.tencent.empty" drawsBackground="YES" id="OAD-mD-iKC">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-SJ-mqg">
-                                <rect key="frame" x="18" y="493" width="170" height="17"/>
+                                <rect key="frame" x="18" y="493" width="167" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="图片名：" id="rjO-1m-EDv">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -210,15 +210,15 @@
                                 </textFieldCell>
                             </textField>
                             <textField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n8d-A3-uUg">
-                                <rect key="frame" x="194" y="490" width="236" height="22"/>
+                                <rect key="frame" x="191" y="490" width="239" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="empty" drawsBackground="YES" id="c19-qM-Lfc">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3hO-47-j4g">
-                                <rect key="frame" x="18" y="450" width="170" height="17"/>
+                                <rect key="frame" x="18" y="451" width="167" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="应用名称：" id="AAB-A5-uYn">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -226,15 +226,15 @@
                                 </textFieldCell>
                             </textField>
                             <textField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CTq-J2-0eF">
-                                <rect key="frame" x="194" y="447" width="236" height="22"/>
+                                <rect key="frame" x="191" y="448" width="239" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="支付宝" drawsBackground="YES" id="x7K-Yi-ytl">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nju-AA-yEC">
-                                <rect key="frame" x="18" y="404" width="170" height="17"/>
+                                <rect key="frame" x="18" y="406" width="167" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="ipa文件夹路径：" id="ZNk-U5-3Me">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -242,15 +242,15 @@
                                 </textFieldCell>
                             </textField>
                             <textField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cbt-DF-xd7">
-                                <rect key="frame" x="194" y="401" width="236" height="22"/>
+                                <rect key="frame" x="191" y="403" width="239" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="http://192.168.1.1/ipa" drawsBackground="YES" id="bjA-cn-y6E">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vnb-Xz-VNR">
-                                <rect key="frame" x="18" y="365" width="170" height="17"/>
+                                <rect key="frame" x="18" y="368" width="167" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="图片文件夹路径：" id="6Jo-6q-POv">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -258,15 +258,15 @@
                                 </textFieldCell>
                             </textField>
                             <textField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QF1-Ul-u3D">
-                                <rect key="frame" x="194" y="362" width="236" height="22"/>
+                                <rect key="frame" x="191" y="365" width="239" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="http://192.168.1.1/img" drawsBackground="YES" id="A3E-TF-hoV">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Bl-Wi-V8A" customClass="DestinationView" customModule="PlistMake" customModuleProvider="target">
-                                <rect key="frame" x="127" y="129" width="197" height="198"/>
+                                <rect key="frame" x="127" y="132" width="197" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="DCN-hU-pDw"/>
                                     <constraint firstAttribute="height" constant="198" id="cgI-W8-Xoc"/>
@@ -274,7 +274,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Add" id="33V-VF-top"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zZP-WH-8uX">
-                                <rect key="frame" x="137" y="91" width="177" height="17"/>
+                                <rect key="frame" x="136" y="95" width="179" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="应用图标(拖动图片到此位置)" id="VeK-tq-vbh">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -289,8 +289,9 @@
                                 </constraints>
                                 <buttonCell key="cell" type="square" title="生成" bezelStyle="shadowlessSquare" image="PushButton" imagePosition="overlaps" alignment="center" imageScaling="axesIndependently" inset="2" id="Kqb-d6-ZM3">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="15"/>
+                                    <font key="font" metaFont="systemMedium" size="15"/>
                                 </buttonCell>
+                                <color key="contentTintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="generation:" target="OyG-uK-9se" id="jqP-LS-H3X"/>
                                 </connections>
