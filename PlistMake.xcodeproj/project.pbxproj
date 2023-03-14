@@ -18,6 +18,8 @@
 		2774BD7D1FE8EA1200DB21DB /* H5ProjectMakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774BD7C1FE8EA1200DB21DB /* H5ProjectMakeTests.swift */; };
 		2774BD881FE8EA1200DB21DB /* H5ProjectMakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774BD871FE8EA1200DB21DB /* H5ProjectMakeUITests.swift */; };
 		2774BD971FE8EACD00DB21DB /* PlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774BD961FE8EACD00DB21DB /* PlistViewController.swift */; };
+		5213C5C829C0A2E600355846 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213C5C729C0A2E600355846 /* ContentView.swift */; };
+		5213C5CA29C0A55700355846 /* PlistConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213C5C929C0A55700355846 /* PlistConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		2774BD891FE8EA1200DB21DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2774BD961FE8EACD00DB21DB /* PlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistViewController.swift; sourceTree = "<group>"; };
 		5213C5C529C07DE300355846 /* privacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy.md; sourceTree = "<group>"; };
+		5213C5C729C0A2E600355846 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5213C5C929C0A55700355846 /* PlistConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		2774BD661FE8EA1200DB21DB /* H5ProjectMake */ = {
 			isa = PBXGroup;
 			children = (
+				5213C5C629C0A2D400355846 /* Source */,
 				5213C5C529C07DE300355846 /* privacy.md */,
 				2774BD671FE8EA1200DB21DB /* AppDelegate.swift */,
 				2774BD691FE8EA1200DB21DB /* ViewController.swift */,
@@ -149,6 +154,15 @@
 				243A8B98209B0DDF00424612 /* CustomWindowController.swift */,
 			);
 			path = PlistMaker;
+			sourceTree = "<group>";
+		};
+		5213C5C629C0A2D400355846 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5213C5C729C0A2E600355846 /* ContentView.swift */,
+				5213C5C929C0A55700355846 /* PlistConfig.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +304,11 @@
 			files = (
 				2774BD6A1FE8EA1200DB21DB /* ViewController.swift in Sources */,
 				243A8B5B209AE49F00424612 /* ImageHelper.swift in Sources */,
+				5213C5C829C0A2E600355846 /* ContentView.swift in Sources */,
 				243A8B99209B0DDF00424612 /* CustomWindowController.swift in Sources */,
 				2774BD681FE8EA1200DB21DB /* AppDelegate.swift in Sources */,
 				2756FE9D1FEA0432001157B7 /* DestinationView.swift in Sources */,
+				5213C5CA29C0A55700355846 /* PlistConfig.swift in Sources */,
 				2774BD971FE8EACD00DB21DB /* PlistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -449,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

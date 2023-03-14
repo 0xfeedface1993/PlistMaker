@@ -146,7 +146,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="-30"/>
+            <point key="canvasLocation" x="57" y="-38"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -162,12 +162,25 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="OyG-uK-9se" kind="relationship" relationship="window.shadowedContentViewController" id="Y4P-OL-0uy"/>
+                        <segue destination="mHC-OD-AHZ" kind="relationship" relationship="window.shadowedContentViewController" id="vUo-uF-LgV"/>
                     </connections>
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MNo-e0-3tr">
+            <objects>
+                <viewController id="mHC-OD-AHZ" customClass="ViewController" customModule="PlistMake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="bh4-ES-4tS">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="xyv-ar-Kge" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="250"/>
         </scene>
         <!--Plist Maker-->
         <scene sceneID="Xga-SU-1qt">
